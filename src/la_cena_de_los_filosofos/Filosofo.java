@@ -38,7 +38,7 @@ public class Filosofo extends Thread{
         for (int i = 0; i < 10; i++) {
             
             
-            System.out.println("Filósofo " + id+ " piensa mientras intenta comer");
+            System.out.println("FilÃ³sofo " + id+ " piensa mientras intenta comer");
 
             try {
                 palillo_izquierda.acquire(1);
@@ -48,7 +48,7 @@ public class Filosofo extends Thread{
                 System.out.println(ex);
             }
 
-            System.out.println("Filósofo " + id+ "  está comiendo");
+            System.out.println("FilÃ³sofo " + id+ "  estÃ¡ comiendo");
             try {
                 sleep(200);
             } catch (InterruptedException ex) {
@@ -59,9 +59,9 @@ public class Filosofo extends Thread{
             palillo_derecha.release(1);
             
             if( i == 9 ){
-                System.out.println("Filósofo " + id+ "  dice que se marcha");
+                System.out.println("FilÃ³sofo " + id+ "  dice que se marcha");
             }else{
-                System.out.println("Filósofo " + id+ "  se pone a hablar");
+                System.out.println("FilÃ³sofo " + id+ "  se pone a hablar");
                 try {
                     sleep(200);
                 } catch (InterruptedException ex) {
@@ -72,23 +72,8 @@ public class Filosofo extends Thread{
 
         }
         
-        System.out.println("Filósofo " + id+ "  se marcha de la cena");
+        System.out.println("FilÃ³sofo " + id+ "  se marcha de la cena");
 
     }
-    
-    
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public void setPalillo_izquierda(Palillo palillo_izquierda) {
-        this.palillo_izquierda = palillo_izquierda;
-    }
-
-    public void setPalillo_derecha(Palillo palillo_derecha) {
-        this.palillo_derecha = palillo_derecha;
-    }
-    
-    
-    
 }
