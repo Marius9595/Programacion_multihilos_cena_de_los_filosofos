@@ -3,3 +3,11 @@ Se trata de simular una cena  donde 5 hilos (Los filósofos) usarán 5 recursos 
 
 
 <img src="https://github.com/Marius9595/Programacion_multihilos_cena_de_los_filosofos/blob/main/esquema_planteamiento.png?raw=true"/>
+
+
+
+## Muestra del output del programa
+****
+
+<img src="https://github.com/Marius9595/Programacion_multihilos_cena_de_los_filosofos/blob/main/salida1.png"/>
+<img src="https://github.com/Marius9595/Programacion_multihilos_cena_de_los_filosofos/blob/main/salida2.png"/>
